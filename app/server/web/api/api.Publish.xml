@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="ftp://10.5.0.1:27351/wwwroot/api.topb.it" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FTP" replaceMatchingFiles="True" userName="tox" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASgHPt5Bi8EG1SI0N5nuJ6wAAAAACAAAAAAADZgAAwAAAABAAAACMXM7RZ7w3JCmlgEGsNcPMAAAAAASAAACgAAAAEAAAANft0QKrHMhWIvwdOkLGz38YAAAAZjQ9yMMJw0m7YC5GvsCAGJFAZUe8iLR/FAAAACEpdvWHBURb5zuO2s+3TUirbUne" SelectedForPublish="True">
+    <file relUrl="bin/Castle.ActiveRecord.Web.xml" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/Castle.Components.Validator.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/Castle.ActiveRecord.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="ActiveRecord.debug.config" publishTime="10/07/2011 10:18:37" />
+    <file relUrl="bin/log4net.xml" publishTime="06/14/2011 18:13:21" />
+    <file relUrl="log4net.test.config" publishTime="06/27/2011 07:47:49" />
+    <file relUrl="bin/Castle.Windsor.dll" publishTime="06/19/2011 16:07:21" />
+    <file relUrl="Global.asax" publishTime="06/15/2011 09:31:52" />
+    <file relUrl="bin/pl/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/NHibernate.ByteCode.Castle.xml" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/log4net.dll" publishTime="06/14/2011 18:13:21" />
+    <file relUrl="bin/it/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/topbit.api.dll" publishTime="10/08/2011 05:05:34" />
+    <file relUrl="bin/NHibernate.ByteCode.Castle.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="06/15/2011 00:52:57" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="06/14/2011 19:10:55" />
+    <file relUrl="bin/Castle.Windsor.pdb" publishTime="06/19/2011 16:07:21" />
+    <file relUrl="bin/mk/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/Microsoft.ServiceModel.Web.jQuery.dll" publishTime="06/14/2011 18:13:35" />
+    <file relUrl="bin/lt/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="log4net.debug.config" publishTime="06/27/2011 07:47:49" />
+    <file relUrl="bin/Microsoft.Runtime.Serialization.Json.dll" publishTime="06/14/2011 18:13:35" />
+    <file relUrl="bin/Castle.Components.Validator.pdb" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/NHibernate.Search.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="ActiveRecord.test.config" publishTime="10/07/2011 10:18:41" />
+    <file relUrl="bin/Microsoft.Runtime.Serialization.Json.xml" publishTime="06/14/2011 18:13:35" />
+    <file relUrl="bin/Castle.Core.dll" publishTime="06/14/2011 19:10:55" />
+    <file relUrl="packages.config" publishTime="06/16/2011 02:39:16" />
+    <file relUrl="bin/Castle.Core.xml" publishTime="06/14/2011 19:10:55" />
+    <file relUrl="bin/fr/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/Antlr3.Runtime.dll" publishTime="06/14/2011 19:10:55" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="06/15/2011 00:52:57" />
+    <file relUrl="bin/nl/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/lv/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="06/15/2011 00:52:57" />
+    <file relUrl="bin/Microsoft.ServiceModel.Web.jQuery.xml" publishTime="06/14/2011 18:13:35" />
+    <file relUrl="bin/sv/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/Castle.Components.Validator.xml" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/topbit.api.pdb" publishTime="10/08/2011 05:05:34" />
+    <file relUrl="bin/Castle.Windsor.xml" publishTime="06/19/2011 16:07:21" />
+    <file relUrl="bin/NHibernate.xml" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/ru/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="log4net.config" publishTime="06/25/2011 23:13:45" />
+    <file relUrl="bin/Castle.ActiveRecord.Web.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/Castle.ActiveRecord.xml" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="Web.config" publishTime="10/08/2011 05:08:25" />
+    <file relUrl="ActiveRecord.config" publishTime="10/07/2011 10:18:10" />
+    <file relUrl="bin/topbit.business.dll" publishTime="10/08/2011 05:05:33" />
+    <file relUrl="bin/Remotion.Data.Linq.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/pt/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/NHibernate.dll" publishTime="06/14/2011 19:10:56" />
+    <file relUrl="bin/topbit.business.pdb" publishTime="10/08/2011 05:05:33" />
+    <file relUrl="bin/es/Castle.Components.Validator.resources.dll" publishTime="06/14/2011 19:10:56" />
+  </publishProfile>
+</publishData>

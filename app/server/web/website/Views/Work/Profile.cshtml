@@ -1,0 +1,89 @@
+﻿@model App.Web.Models.CreateEditProfileModel
+
+@{
+    ViewBag.Title = "绑定挖掘机帐号";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section header{
+<link href="@Url.Content("~/Content/css/form.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+}
+<div class="row">
+<div class="sevencol">
+<div class="display-form">
+<h2>什么是挖掘机帐号？</h2>
+<p>挖掘机帐号为您在所选择的矿池所创建的挖掘机帐号，并非TopBit的登录帐号。</p>
+<br />
+<h2>如何获得挖掘机帐号？</h2>
+<p>我们不提供创建挖掘机帐号服务，请到各矿池注册您的挖掘机帐号。</p>
+<br />
+<h2>可以不去注册挖掘机帐号吗？</h2>
+<p>可以，TopBit已经预先在各大矿池注册了足够的挖掘机帐号。如果您不使用自己的帐号，TopBit则会给您分配一个，这样最大程度避免了零散收入未达到最小支付限额而导致的浪费。</p>
+</div>
+</div>
+
+<div class="fivecol last">
+    <div class="form">
+    @using (Html.BeginForm( "Profile","Work")) {
+        @Html.ValidationSummary(true)
+        <fieldset>
+            <legend>绑定挖掘机帐号</legend>
+
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="display-label">
+                @Html.LabelFor(model => model.Mine)
+            </div>
+            <div class="display-field">
+                <img class="mini-country-flag" src="@Model.MineIcon" title="@Model.MineIconText" alt="@Model.Mine"/> @Html.DisplayFor(model => model.Mine)
+            </div>
+
+            <div class="display-label">
+                @Html.LabelFor(model => model.MineDescription)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.MineDescription)
+            </div>
+
+            <div class="display-label">
+                @Html.LabelFor(model => model.MineTaxRate)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.MineTaxRate)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.CustomAccount)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.CustomAccount)
+                @Html.ValidationMessageFor(model => model.CustomAccount)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.CustomPassword)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.CustomPassword)
+                @Html.ValidationMessageFor(model => model.CustomPassword)
+            </div>
+
+            @Html.HiddenFor(model => model.MineId)
+
+            <p>
+                <input type="submit" value="创建并保存" /> 
+                @if (Model.Id > 0)
+                {
+                    @:<a class="button delete" href="/Work/DeleteProfile/@Model.Id" > </a>
+                }
+            </p>
+            <div class="right">
+                @Html.ActionLink("返回矿池列表", "Index", "Work")
+            </div>
+        </fieldset>
+    }
+</div>
+
+</div>
+</div>

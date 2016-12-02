@@ -1,0 +1,37 @@
+﻿@model App.Web.Models.DashboardModel
+
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>我的帐号</h2>
+
+<fieldset class="display-group">
+    <div class="display-label">
+        @Html.LabelFor(m => m.BitCoin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BitCoin)
+    </div>
+
+    <div class="display-label">
+        @Html.LabelFor(model => model.Balance)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Balance)
+    </div>
+
+    <div class="display-label">
+        @Html.LabelFor(model => model.MiningSpeed)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PoolSpeed)
+    </div>
+
+    <div class="display-label">
+        @Html.LabelFor(model => model.Workers)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Workers)
+    </div>
+</fieldset>

@@ -1,0 +1,1 @@
+phoenix.exe -u http://api.deepbot.net:8200/ -k poclbm AGGRESSION=3

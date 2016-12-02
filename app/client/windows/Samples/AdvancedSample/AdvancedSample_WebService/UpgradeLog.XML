@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AdvancedSample_WebService">
+</Property><Property Name="Solution File" Value="D:\CodePlex\deepbot\app\client\windows\Samples\AdvancedSample\AdvancedSample_WebService\AdvancedSample_WebService.sln">
+</Property><Property Name="Date" Value="Friday, June 24, 2011">
+</Property><Property Name="Time" Value="9:39:33 AM">
+</Property></Properties><Event ErrorLevel="2" Project="D:\CodePlex\deepbot\app\client\windows\Samples\AdvancedSample\AdvancedSample_WebService\AdvancedSample_WebService.csproj" Source="AdvancedSample_WebService.csproj" Description="To access Web sites on the local IIS Web server, you must run Visual Studio under an Administrator account.">
+</Event><Event ErrorLevel="2" Project="" Source="AdvancedSample_WebService.csproj" Description="The operation could not be completed ">
+</Event></UpgradeLog>

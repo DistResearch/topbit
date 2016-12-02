@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AdvancedSample_WebService">
+</Property><Property Name="Solution File" Value="D:\CodePlex\deepbot\app\client\windows\Samples\AdvancedSample\AdvancedSample_WebService\AdvancedSample_WebService.sln">
+</Property><Property Name="Date" Value="Friday, June 24, 2011">
+</Property><Property Name="Time" Value="9:40:46 AM">
+</Property><Property Name="Log Number" Value="3">
+</Property></Properties><Event ErrorLevel="0" Project="AdvancedSample_WebService" Source="AdvancedSample_WebService.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="3" Project="AdvancedSample_WebService" Source="AdvancedSample_WebService.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AdvancedSample_WebService" Source="AdvancedSample_WebService.csproj" Description="You have completed the first step in converting your Visual Studio .NET 2003 web project. To complete the conversion, please select your project in the Solution Explorer and choose the 'Convert to Web Application' context menu item.">
+</Event></UpgradeLog>

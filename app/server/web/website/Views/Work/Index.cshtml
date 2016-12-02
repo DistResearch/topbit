@@ -1,0 +1,220 @@
+﻿@model App.Web.Models.WorkModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+@section header{
+<link href="@Url.Content("~/Content/css/tab.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/jQuery.tmpl.min.js")" type="text/javascript"></script>
+<script id="PoolTemplate" type="text/x-jquery-tmpl">
+<tr>
+    <td class="align-center">${Status}</td>
+    <td class="align-center"><img class="mini-country-flag" src="${Icon}" title="${IconText}"/></td>
+    <td class="align-left heading"><a class="external" target="_blank" href="${HomePage}" title="在新窗口中访问 ${DisplayName} 的主页">${DisplayName}</a></td>
+    <td class="align-left">${Description}</td>
+    <td>${Speed}</td>
+    <td>${Tax}</td>
+    <td><a href='/Work/Profile/${Id}'>${ActionText}</a></th>
+</tr>
+</script>
+<script id="BotTemplate" type="text/x-jquery-tmpl">
+<tr>
+    <td class="align-center"><img class="mini-status-icon" src="${StatusIcon}" title="${StatusText}" alt="${StatusText}"/></th>
+    <td class="align-center"><img class="mini-country-flag" src="${MineIcon}" title="${MineText}" alt="${MineText}"/></td>
+    <td class="align-left">${Name}</th>
+    <td>${Profit}</th>
+    <td>${WorkHours}</th>
+    <td>${Shares}</th>
+    <td><a title="${EfficiencyText}">${Efficiency}</a></th>
+    <td><a href='/Bot/${Action}/${Id}'>${ActionText}</a></th>
+</tr>
+</script>
+<script type="text/javascript">
+    var data = @Model.ToJson();
+    
+    $(document).ready(function () {
+
+        //When page loads...
+        $(".tab_content").hide(); //Hide all content
+        $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+        $(".tab_content:first").show(); //Show first tab content
+
+        //On Click Event
+        $("ul.tabs li").click(function () {
+
+            $("ul.tabs li").removeClass("active"); //Remove any "active" class
+            $(this).addClass("active"); //Add "active" class to selected tab
+            $(".tab_content").hide(); //Hide all tab content
+
+            var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+            $(activeTab).fadeIn(); //Fade in the active ID content
+            return false;
+        });
+
+        if (data.CustomMines.length > 0) {
+            $('#custom-mine-table-body').empty();
+        }
+        for(var idx=0; idx<data.CustomMines.length; ++idx){
+            var mine = data.CustomMines[idx];
+            $("#PoolTemplate").tmpl(mine).appendTo('#custom-mine-table-body');
+        }
+
+        if (data.Mines.length > 0) {
+            $('#mine-table-body').empty();
+        }
+        for(var idx=0; idx<data.Mines.length; ++idx){
+            var mine = data.Mines[idx];
+            $("#PoolTemplate").tmpl(mine).appendTo('#mine-table-body');
+        }
+
+        if (data.Bots.length > 0) {
+            $('#bot-table-body').empty();
+        }
+        for(var idx=0; idx<data.Bots.length; ++idx){
+            var bot = data.Bots[idx];
+            $("#BotTemplate").tmpl(bot).appendTo('#bot-table-body');
+        }
+        
+    });
+</script>
+<style type="text/css"> 
+.mini-country-flag { height: 16px; width: 28px; }
+.mini-status-icon { height: 12px; }
+.align-left  { text-align: left; }
+.align-center  { text-align: center; }
+.align-right { text-align: right; }
+.heading { font-family: Tahoma, Helvetica, Alrial, Sans-Serif; }
+</style> 
+}
+<div class="row">
+    <div class="threecol">
+    
+        <fieldset>
+            <div class="display-label">@Html.LabelFor(model => model.Account)</div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Account)
+            </div>
+
+            <div class="display-label">@Html.LabelFor(model => model.BitCoin)</div>
+            <div class="display-field bitcoin">
+                @Html.DisplayFor(model => model.BitCoin)
+            </div>
+
+            <div class="display-label">@Html.LabelFor(model => model.Credit)</div>
+            <div class="display-field currency">
+                @Html.DisplayFor(model => model.Credit)
+            </div>
+
+            <div class="display-label">@Html.LabelFor(model => model.MiningSpeed)</div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.MiningSpeed)
+            </div>
+
+            <div class="display-label">@Html.LabelFor(model => model.PoolSpeed)</div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.PoolSpeed)
+            </div>
+
+            <div class="display-label">@Html.LabelFor(model => model.Workers)</div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Workers)
+            </div>
+
+        </fieldset>
+    </div> <!-- threecol -->
+
+    <div class="ninecol last">
+        <ul class="tabs">
+            <li><a href="#bot" class="h2">我的挖掘机</a></li>
+            <li><a href="#pool" class="h2">矿池</a></li>
+        </ul>
+        <div class="tab_container">
+            <div id="bot" class="tab_content">
+                <div style="float: right; text-align:right;">
+                    <input id="buyBot" type="button" class="button" title="非专业人士也可以拥有自己的挖掘机" value="购买挖掘机" />
+                    &nbsp;
+                    <input id="linkBot" type="button" class="button" title="完全免费，需要对挖掘机软件有一定的了解" value="连接挖掘机" />
+                </div>
+                <div style="line-height: 2em;">
+                    &nbsp;
+                </div>
+                <br />
+                <div id="bot-table">
+                    <table style="width:100%">
+                        <thead>
+                            <tr>
+                                <th class="align-center" style="width:35px;">状态</th>
+                                <th class="align-center" style="width:35px;">矿池</th>
+                                <th>挖掘机</th>
+                                <th style="width:120px;text-align:right;">产出</th>                                
+                                <th style="width:80px;text-align:right;">服役时间</th>
+                                <th style="width:80px;text-align:right;">股份</th>
+                                <th style="width:60px;text-align:right;">效率</th>
+                                <th style="width:60px;text-align:right;">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bot-table-body">
+                        </tbody>
+                    </table>
+                </div>
+                <br />
+                <div style="text-align:right;">
+                    <a href="mailto:support@deepbot.net">没有列出我的挖掘机</a>
+                </div>
+            </div>
+            <div id="pool" class="tab_content">
+                <div id="mine-table">
+                    <table style="width:100%">
+                        <thead>
+                            <tr>
+                                <th class="align-center" style="width:50px;">状态</th>
+                                <th style="width:35px;">位置</th>
+                                <th style="width:150px;">主页</th>
+                                <th>介绍</th>
+                                <th style="width:60px;text-align:right;">速度</th>
+                                <th style="width:60px;text-align:right;">税率</th>
+                                <th style="width:60px;text-align:right;">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="custom-mine-table-body">
+                            <tr>
+                                <td colspan="7" class="align-center">尚未配置任何矿池，系统将自动使用默认设置分配矿池</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    <table style="width:100%">
+                        <thead>
+                            <tr>
+                                <th class="align-center" style="width:50px;">状态</th>
+                                <th style="width:35px;">位置</th>
+                                <th style="width:150px;">主页</th>
+                                <th>介绍</th>
+                                <th style="width:60px;text-align:right;">速度</th>
+                                <th style="width:60px;text-align:right;">税率</th>
+                                <th style="width:60px;text-align:right;">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mine-table-body">
+                            <tr>
+                                <td colspan="7" class="align-center">所有矿池工作正常</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br />
+                <div style="text-align:right;">
+                    <a href="mailto:support@deepbot.net">没有我需要的矿池</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ninecol -->
+</div>
+<div class="row">
+    <div class="twelvecol last">
+        <p style="margin: 20px;">
+            赞助商链接
+        </p>
+    </div>
+</div>

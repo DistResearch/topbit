@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Work";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+
+<div class="box">
+<div class="inner">
+
+<div class="title">我要开矿</div>
+<br />
+<div class="description">
+    <p>DeepBot 提供开矿服务，矿主对所属的矿点拥有全部的控制权，包括矿点是否公开、征税比率等。</p>
+    <br />
+    <div class="text-align:center">
+        <table class="simple_table">
+            <tr>
+                <td style="width:100px;">挖掘机容量</td>
+                <td style="width:100px;">矿池速度</td>
+                <td style="width:100px;">费用</td>
+            </tr>
+            <tr>
+                <td>自备服务器</td>
+                <td>自备宽带接入</td>
+                <td>免费</td>
+            </tr>
+            <tr>
+                <td>5 台</td>
+                <td>5 G/s</td>
+                <td>10 元/月</td>
+            </tr>
+            <tr>
+                <td>20 台</td>
+                <td>20 G/s</td>
+                <td>30 元/月</td>
+            </tr>
+            <tr>
+                <td>100 台</td>
+                <td>100 G/s</td>
+                <td>300 元/月</td>
+            </tr>
+            <tr>
+                <td>500 台</td>
+                <td>1000 G/s</td>
+                <td>3000 元/月</td>
+            </tr>
+            <tr>
+                <td>1000 台</td>
+                <td>2000 G/s</td>
+                <td>5000 元/月</td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <p class="notice">注意：需要自行招募矿工。</p>
+</div>
+</div>
+</div>
+
+
+<div class="box">
+<div class="inner">
+
+<div class="title"><a href="@Url.Action("Index", "Bot")">我要挖矿</a></div>
+<br />
+<div class="description">
+    <p>DeepBot 集成了全球各大矿池，DeepConnect 技术允许你通过网页对挖掘机（Bot）进行遥控作业。</p>
+    <br />
+    
+    <ul>
+        <li>使用网页查询挖掘机工作状态</li>
+        <li>通过网页开始或停止挖掘工作</li>
+        <li>将所有矿池的比特币汇集到当前账户</li>
+        <li>当矿池离线时，自动切换到其他在线的矿池继续挖掘</li>
+        <li>自动选择连接速度最快的矿池 *</li>
+        <li>以上这些完全免费</li>
+    </ul>
+
+    <p class="notice">支持的矿池： slush's pool, deepbit, BTC Guild, BitPenny, BitCoin Pool, BTC Mine, BitClockers, GetCoin (持续更新中)</p>
+    <br />
+    <p class="warn">* 如果两部挖掘机同时挖到矿，与矿池连接速度较快的一台挖掘机将获得收益，你懂的</p>
+</div>
+</div>
+</div>
+
+
+</div>

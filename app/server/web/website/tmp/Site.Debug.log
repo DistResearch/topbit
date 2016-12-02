@@ -1,0 +1,1290 @@
+2011-06-25 22:50:47,243 [302] ERROR NHibernate.Tool.hbm2ddl.SchemaExport [(null)] - There is already an object named 'Users' in the database.
+System.Data.SqlClient.SqlException (0x80131904): There is already an object named 'Users' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.Tool.hbm2ddl.SchemaExport.ExecuteSql(IDbCommand cmd, String sql)
+   at NHibernate.Tool.hbm2ddl.SchemaExport.Execute(Action`1 scriptAction, Boolean export, Boolean throwOnError, TextWriter exportOutput, IDbCommand statement, String sql)
+   at NHibernate.Tool.hbm2ddl.SchemaExport.Execute(Action`1 scriptAction, Boolean export, Boolean justDrop, IDbConnection connection, TextWriter exportOutput)
+   at NHibernate.Tool.hbm2ddl.SchemaExport.Execute(Action`1 scriptAction, Boolean export, Boolean justDrop)
+2011-06-25 23:17:46,226 [25] ERROR NHibernate.Id.IncrementGenerator [(null)] - could not get increment value
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Account'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.Id.IncrementGenerator.GetNext(ISessionImplementor session)
+2011-06-25 23:17:46,247 [25] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:18:39,263 [36] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id4_0_, this_.UserId as UserId4_0_, this_.CoinBalance as CoinBala3_4_0_, this_.CreditBalance as CreditBa4_4_0_ FROM Account this_ WHERE this_.UserId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Account'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-25 23:18:39,291 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:18:39,320 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:18:39,321 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:19:01,204 [31] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id4_0_, this_.UserId as UserId4_0_, this_.CoinBalance as CoinBala3_4_0_, this_.CreditBalance as CreditBa4_4_0_ FROM Account this_ WHERE this_.UserId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Account'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-25 23:19:01,230 [31] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:19:01,256 [31] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:19:01,256 [31] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:20:52,651 [29] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id3_0_, this_.UserId as UserId3_0_, this_.CoinBalance as CoinBala3_3_0_, this_.CreditBalance as CreditBa4_3_0_ FROM Account this_ WHERE this_.UserId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Account'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-25 23:20:52,705 [29] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:20:52,742 [29] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:20:52,743 [29] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:40:35,305 [16] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: INSERT INTO Share (PreviousBlock, AccountId, MineId, BotId, Timestamp, IPAddress, Solution, Result, NetworkResult, Id) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Share'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-25 23:40:35,539 [16] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Share'.
+2011-06-25 23:40:35,583 [16] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] - Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not insert: [App.Web.Business.Data.Share#28665][SQL: INSERT INTO Share (PreviousBlock, AccountId, MineId, BotId, Timestamp, IPAddress, Solution, Result, NetworkResult, Id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)] ---> System.Data.SqlClient.SqlException: Invalid object name 'Share'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+   at NHibernate.AdoNet.NonBatchingBatcher.AddToBatch(IExpectation expectation)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   --- End of inner exception stack trace ---
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityInsertAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2011-06-25 23:41:57,616 [14] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id4_0_, this_.UserId as UserId4_0_, this_.CoinBalance as CoinBala3_4_0_, this_.CreditBalance as CreditBa4_4_0_ FROM Account this_ WHERE this_.UserId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Account'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-25 23:41:57,661 [14] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:41:57,693 [14] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-25 23:41:57,694 [14] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-26 00:10:54,685 [36] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id1_0_, this_.UserId as UserId1_0_, this_.CoinBalance as CoinBala3_1_0_, this_.CreditBalance as CreditBa4_1_0_ FROM Account this_ WHERE this_.UserId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Account'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 00:10:54,733 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-26 00:10:54,771 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-26 00:10:54,772 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-26 13:47:23,378 [61] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT bots0_.MineId as MineId2_, bots0_.Id as Id2_, bots0_.Id as Id5_1_, bots0_.Login as Login5_1_, bots0_.Password as Password5_1_, bots0_.ConfirmCode as ConfirmC4_5_1_, bots0_.Balance as Balance5_1_, bots0_.Name as Name5_1_, bots0_.IPAddress as IPAddress5_1_, bots0_.MineLogin as MineLogin5_1_, bots0_.MinePassword as MinePass9_5_1_, bots0_.Share as Share5_1_, bots0_.TotalShare as TotalShare5_1_, bots0_.AcceptCommand as AcceptC12_5_1_, bots0_.Command as Command5_1_, bots0_.CommandResult as Command14_5_1_, bots0_.AccountId as AccountId5_1_, bots0_.MineId as MineId5_1_, account1_.Id as Id2_0_, account1_.UserId as UserId2_0_, account1_.CoinBalance as CoinBala3_2_0_, account1_.CreditBalance as CreditBa4_2_0_ FROM Bot bots0_ left outer join Account account1_ on bots0_.AccountId=account1_.Id WHERE bots0_.MineId=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 13:47:23,401 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:23,403 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:38,957 [51] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT bots0_.MineId as MineId2_, bots0_.Id as Id2_, bots0_.Id as Id5_1_, bots0_.Login as Login5_1_, bots0_.Password as Password5_1_, bots0_.ConfirmCode as ConfirmC4_5_1_, bots0_.Balance as Balance5_1_, bots0_.Name as Name5_1_, bots0_.IPAddress as IPAddress5_1_, bots0_.MineLogin as MineLogin5_1_, bots0_.MinePassword as MinePass9_5_1_, bots0_.Share as Share5_1_, bots0_.TotalShare as TotalShare5_1_, bots0_.AcceptCommand as AcceptC12_5_1_, bots0_.Command as Command5_1_, bots0_.CommandResult as Command14_5_1_, bots0_.AccountId as AccountId5_1_, bots0_.MineId as MineId5_1_, account1_.Id as Id2_0_, account1_.UserId as UserId2_0_, account1_.CoinBalance as CoinBala3_2_0_, account1_.CreditBalance as CreditBa4_2_0_ FROM Bot bots0_ left outer join Account account1_ on bots0_.AccountId=account1_.Id WHERE bots0_.MineId=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 13:47:38,957 [51] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:38,957 [51] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:39,786 [75] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT bots0_.MineId as MineId2_, bots0_.Id as Id2_, bots0_.Id as Id5_1_, bots0_.Login as Login5_1_, bots0_.Password as Password5_1_, bots0_.ConfirmCode as ConfirmC4_5_1_, bots0_.Balance as Balance5_1_, bots0_.Name as Name5_1_, bots0_.IPAddress as IPAddress5_1_, bots0_.MineLogin as MineLogin5_1_, bots0_.MinePassword as MinePass9_5_1_, bots0_.Share as Share5_1_, bots0_.TotalShare as TotalShare5_1_, bots0_.AcceptCommand as AcceptC12_5_1_, bots0_.Command as Command5_1_, bots0_.CommandResult as Command14_5_1_, bots0_.AccountId as AccountId5_1_, bots0_.MineId as MineId5_1_, account1_.Id as Id2_0_, account1_.UserId as UserId2_0_, account1_.CoinBalance as CoinBala3_2_0_, account1_.CreditBalance as CreditBa4_2_0_ FROM Bot bots0_ left outer join Account account1_ on bots0_.AccountId=account1_.Id WHERE bots0_.MineId=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 13:47:39,787 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:39,787 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:40,531 [75] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT bots0_.MineId as MineId2_, bots0_.Id as Id2_, bots0_.Id as Id5_1_, bots0_.Login as Login5_1_, bots0_.Password as Password5_1_, bots0_.ConfirmCode as ConfirmC4_5_1_, bots0_.Balance as Balance5_1_, bots0_.Name as Name5_1_, bots0_.IPAddress as IPAddress5_1_, bots0_.MineLogin as MineLogin5_1_, bots0_.MinePassword as MinePass9_5_1_, bots0_.Share as Share5_1_, bots0_.TotalShare as TotalShare5_1_, bots0_.AcceptCommand as AcceptC12_5_1_, bots0_.Command as Command5_1_, bots0_.CommandResult as Command14_5_1_, bots0_.AccountId as AccountId5_1_, bots0_.MineId as MineId5_1_, account1_.Id as Id2_0_, account1_.UserId as UserId2_0_, account1_.CoinBalance as CoinBala3_2_0_, account1_.CreditBalance as CreditBa4_2_0_ FROM Bot bots0_ left outer join Account account1_ on bots0_.AccountId=account1_.Id WHERE bots0_.MineId=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 13:47:40,532 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:40,532 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:40,826 [115] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT bots0_.MineId as MineId2_, bots0_.Id as Id2_, bots0_.Id as Id5_1_, bots0_.Login as Login5_1_, bots0_.Password as Password5_1_, bots0_.ConfirmCode as ConfirmC4_5_1_, bots0_.Balance as Balance5_1_, bots0_.Name as Name5_1_, bots0_.IPAddress as IPAddress5_1_, bots0_.MineLogin as MineLogin5_1_, bots0_.MinePassword as MinePass9_5_1_, bots0_.Share as Share5_1_, bots0_.TotalShare as TotalShare5_1_, bots0_.AcceptCommand as AcceptC12_5_1_, bots0_.Command as Command5_1_, bots0_.CommandResult as Command14_5_1_, bots0_.AccountId as AccountId5_1_, bots0_.MineId as MineId5_1_, account1_.Id as Id2_0_, account1_.UserId as UserId2_0_, account1_.CoinBalance as CoinBala3_2_0_, account1_.CreditBalance as CreditBa4_2_0_ FROM Bot bots0_ left outer join Account account1_ on bots0_.AccountId=account1_.Id WHERE bots0_.MineId=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 13:47:40,827 [115] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:40,827 [115] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:41,480 [47] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT bots0_.MineId as MineId2_, bots0_.Id as Id2_, bots0_.Id as Id5_1_, bots0_.Login as Login5_1_, bots0_.Password as Password5_1_, bots0_.ConfirmCode as ConfirmC4_5_1_, bots0_.Balance as Balance5_1_, bots0_.Name as Name5_1_, bots0_.IPAddress as IPAddress5_1_, bots0_.MineLogin as MineLogin5_1_, bots0_.MinePassword as MinePass9_5_1_, bots0_.Share as Share5_1_, bots0_.TotalShare as TotalShare5_1_, bots0_.AcceptCommand as AcceptC12_5_1_, bots0_.Command as Command5_1_, bots0_.CommandResult as Command14_5_1_, bots0_.AccountId as AccountId5_1_, bots0_.MineId as MineId5_1_, account1_.Id as Id2_0_, account1_.UserId as UserId2_0_, account1_.CoinBalance as CoinBala3_2_0_, account1_.CreditBalance as CreditBa4_2_0_ FROM Bot bots0_ left outer join Account account1_ on bots0_.AccountId=account1_.Id WHERE bots0_.MineId=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 13:47:41,480 [47] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:41,480 [47] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:41,743 [51] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT bots0_.MineId as MineId2_, bots0_.Id as Id2_, bots0_.Id as Id5_1_, bots0_.Login as Login5_1_, bots0_.Password as Password5_1_, bots0_.ConfirmCode as ConfirmC4_5_1_, bots0_.Balance as Balance5_1_, bots0_.Name as Name5_1_, bots0_.IPAddress as IPAddress5_1_, bots0_.MineLogin as MineLogin5_1_, bots0_.MinePassword as MinePass9_5_1_, bots0_.Share as Share5_1_, bots0_.TotalShare as TotalShare5_1_, bots0_.AcceptCommand as AcceptC12_5_1_, bots0_.Command as Command5_1_, bots0_.CommandResult as Command14_5_1_, bots0_.AccountId as AccountId5_1_, bots0_.MineId as MineId5_1_, account1_.Id as Id2_0_, account1_.UserId as UserId2_0_, account1_.CoinBalance as CoinBala3_2_0_, account1_.CreditBalance as CreditBa4_2_0_ FROM Bot bots0_ left outer join Account account1_ on bots0_.AccountId=account1_.Id WHERE bots0_.MineId=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 13:47:41,743 [51] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 13:47:41,744 [51] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'Share'.
+Invalid column name 'TotalShare'.
+2011-06-26 15:23:05,211 [44] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select share0_.BotId as col_0_0_, share0_.MineId as col_1_0_, cast(sum(share0_.Result) as INT) as col_2_0_ from Share share0_ group by share0_.BotId+@p0+share0_.MineId
+System.FormatException: Failed to convert parameter value from a String to a Int32. ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 15:23:05,261 [44] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:23:05,262 [44] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:23:05,297 [44] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:23:05,297 [44] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:23:05,298 [44] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:23:05,298 [44] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:26:31,053 [21] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select share0_.BotId as col_0_0_, share0_.MineId as col_1_0_, cast(sum(share0_.Result) as INT) as col_2_0_ from Share share0_ group by share0_.BotId+@p0+share0_.MineId
+System.FormatException: Failed to convert parameter value from a String to a Int32. ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 15:26:31,112 [21] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:26:31,113 [21] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:26:31,151 [21] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:26:31,151 [21] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:26:31,152 [21] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:26:31,152 [21] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:27:33,241 [20] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select share0_.BotId as col_0_0_, share0_.MineId as col_1_0_, cast(sum(share0_.Result) as INT) as col_2_0_ from Share share0_ group by share0_.BotId+@p0+share0_.MineId
+System.FormatException: Failed to convert parameter value from a String to a Int32. ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 15:27:33,262 [20] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:27:33,262 [20] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:27:33,264 [20] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:27:33,264 [20] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:27:33,265 [20] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:27:33,265 [20] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:28:15,230 [12] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select share0_.BotId as col_0_0_, share0_.MineId as col_1_0_, cast(sum(share0_.Result) as INT) as col_2_0_ from Share share0_ group by share0_.BotId+@p0+share0_.MineId
+System.FormatException: Failed to convert parameter value from a String to a Int32. ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 15:28:15,310 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:28:15,310 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:28:15,368 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:28:15,368 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:28:15,369 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Failed to convert parameter value from a String to a Int32.
+2011-06-26 15:28:15,369 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Input string was not in a correct format.
+2011-06-26 15:34:13,653 [33] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 25683 ms
+2011-06-26 15:36:42,487 [25] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 19176 ms
+2011-06-26 15:37:53,635 [7] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 993 ms
+2011-06-26 15:39:10,087 [11] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 29461 ms
+2011-06-26 15:51:00,500 [39] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 2887 ms
+2011-06-26 15:58:57,458 [34] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 2868 ms
+2011-06-26 16:04:24,509 [21] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 2042 ms
+2011-06-26 16:05:13,070 [21] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 2246 ms
+2011-06-26 16:06:23,834 [18] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1283 ms
+2011-06-26 19:10:22,994 [432] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1588 ms
+2011-06-26 19:11:18,625 [439] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1549 ms
+2011-06-26 19:13:59,392 [432] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1339 ms
+2011-06-26 19:48:26,691 [8] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 2666 ms
+2011-06-26 19:51:13,012 [29] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 2977 ms
+2011-06-26 19:52:49,804 [23] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1811 ms
+2011-06-26 19:53:38,480 [23] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1339 ms
+2011-06-26 19:54:24,227 [13] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1154 ms
+2011-06-26 19:55:42,189 [15] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1760 ms
+2011-06-26 19:56:05,974 [23] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1666 ms
+2011-06-26 19:56:27,312 [28] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1972 ms
+2011-06-26 19:57:20,448 [26] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1301 ms
+2011-06-26 19:59:16,538 [32] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 2707 ms
+2011-06-26 20:01:41,304 [8] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id2_0_, this_.UserId as UserId2_0_, this_.BitCoinBalance as BitCoinB3_2_0_, this_.CreditBalance as CreditBa4_2_0_ FROM Account this_ WHERE this_.UserId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'BitCoinBalance'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 20:01:41,320 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoinBalance'.
+2011-06-26 20:01:41,325 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoinBalance'.
+2011-06-26 20:01:41,326 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoinBalance'.
+2011-06-26 20:01:45,287 [15] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1857 ms
+2011-06-26 20:03:11,898 [27] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 2470 ms
+2011-06-26 20:04:11,238 [28] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 2511 ms
+2011-06-26 20:06:34,571 [25] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1738 ms
+2011-06-26 20:06:52,435 [25] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1610 ms
+2011-06-26 20:08:32,826 [24] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1843 ms
+2011-06-26 20:09:06,038 [31] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1661 ms
+2011-06-26 20:09:23,456 [25] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1714 ms
+2011-06-26 20:09:43,190 [30] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1679 ms
+2011-06-26 20:10:18,224 [25] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1496 ms
+2011-06-26 20:20:20,375 [15] INFO App.Web.Business.Cache.Statistic [(null)] - [Perf] Update Statistic cost 1479 ms
+2011-06-26 20:28:49,115 [38] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id2_0_, this_.UserId as UserId2_0_, this_.BitCoinAccount as BitCoinA3_2_0_, this_.BitCoinBalance as BitCoinB4_2_0_, this_.CreditAccount as CreditAc5_2_0_, this_.Credit as Credit2_0_ FROM Account this_ WHERE this_.UserId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'BitCoinAccount'.
+Invalid column name 'CreditAccount'.
+Invalid column name 'Credit'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 20:28:49,130 [38] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoinAccount'.
+Invalid column name 'CreditAccount'.
+Invalid column name 'Credit'.
+2011-06-26 20:28:49,135 [38] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoinAccount'.
+Invalid column name 'CreditAccount'.
+Invalid column name 'Credit'.
+2011-06-26 20:28:49,135 [38] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoinAccount'.
+Invalid column name 'CreditAccount'.
+Invalid column name 'Credit'.
+2011-06-26 20:29:21,169 [44] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1528 ms
+2011-06-26 20:30:32,033 [45] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1511 ms
+2011-06-26 20:30:59,881 [40] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 2000 ms
+2011-06-26 20:33:35,401 [42] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1477 ms
+2011-06-26 20:34:16,219 [42] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1763 ms
+2011-06-26 20:35:22,859 [10] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1232 ms
+2011-06-26 20:36:06,487 [41] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1244 ms
+2011-06-26 20:38:26,807 [37] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1091 ms
+2011-06-26 20:39:02,852 [43] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1589 ms
+2011-06-26 20:39:45,276 [40] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1664 ms
+2011-06-26 20:40:41,678 [42] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1087 ms
+2011-06-26 20:42:01,164 [43] INFO App.Web.Business.Cache.ServerStatus [(null)] - [Perf] Update ServerStatus cost 1775 ms
+2011-06-26 22:58:16,381 [99] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select share0_.Id as Id3_, share0_.BlockId as BlockId3_, share0_.AccountId as AccountId3_, share0_.MineId as MineId3_, share0_.BotId as BotId3_, share0_.IPAddress as IPAddress3_, share0_.Solution as Solution3_, share0_.Result as Result3_, share0_.LocalResult as LocalRes9_3_, share0_.NetworkResult as Network10_3_ from Share share0_
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'LocalResult'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 22:58:16,448 [99] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'LocalResult'.
+2011-06-26 22:58:16,501 [99] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'LocalResult'.
+2011-06-26 22:58:16,502 [99] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'LocalResult'.
+2011-06-26 22:58:40,064 [97] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 1920 ms
+2011-06-26 23:00:56,730 [106] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 4349 ms
+2011-06-26 23:03:30,155 [97] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 1934 ms
+2011-06-26 23:12:49,138 [36] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select share0_.Id as Id1_, share0_.BlockId as BlockId1_, share0_.AccountId as AccountId1_, share0_.MineId as MineId1_, share0_.BotId as BotId1_, share0_.IPAddress as IPAddress1_, share0_.Solution as Solution1_, share0_.Result as Result1_, share0_.LocalResult as LocalRes9_1_, share0_.NetworkResult as Network10_1_ from Share share0_
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Share'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-26 23:12:49,153 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Share'.
+2011-06-26 23:12:49,155 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Share'.
+2011-06-26 23:12:49,156 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Share'.
+2011-06-26 23:12:57,688 [45] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 40 ms
+2011-06-26 23:15:22,421 [41] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 392 ms
+2011-06-26 23:22:52,977 [29] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 458 ms
+2011-06-26 23:23:55,821 [29] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 29 ms
+2011-06-26 23:27:09,438 [27] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, AccountId = @p25 WHERE Id = @p26
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-27 06:35:40,708 [8] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 504 ms
+2011-06-27 06:37:01,340 [11] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 55 ms
+2011-06-27 06:51:25,016 [14] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 469 ms
+2011-06-27 06:52:36,103 [14] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 639 ms
+2011-06-27 06:53:42,989 [29] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 467 ms
+2011-06-27 06:55:04,234 [10] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 443 ms
+2011-06-27 07:03:13,356 [38] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 438 ms
+2011-06-27 07:32:04,197 [43] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 957 ms
+2011-06-27 07:37:24,476 [46] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 638 ms
+2011-06-27 07:39:58,514 [28] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 632 ms
+2011-06-27 07:41:15,706 [24] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 504 ms
+2011-06-27 07:42:06,975 [45] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 93 ms
+2011-06-28 07:50:07,961 [17] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 674 ms
+2011-06-29 07:08:04,211 [25] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id3_0_, this_.CreationLog as Creation2_3_0_, this_.CreationDate as Creation3_3_0_, this_.UpdatedLog as UpdatedLog3_0_, this_.UpdatedDate as UpdatedD5_3_0_, this_.UserId as UserId3_0_, this_.BitCoinAccount as BitCoinA7_3_0_, this_.BitCoin as BitCoin3_0_, this_.CreditAccount as CreditAc9_3_0_, this_.Credit as Credit3_0_ FROM Account this_ WHERE this_.UserId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'BitCoin'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-29 07:08:04,289 [25] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoin'.
+2011-06-29 07:08:04,334 [25] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoin'.
+2011-06-29 07:08:04,335 [25] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoin'.
+2011-06-29 07:08:07,022 [25] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:10:23,936 [24] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:10:24,832 [24] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:13:27,731 [24] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:13:27,795 [24] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:13:49,668 [12] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:13:49,730 [12] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:14:53,640 [16] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:15:01,435 [16] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:15:48,322 [24] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:15:48,418 [24] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:18:32,500 [20] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:18:32,598 [20] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:20:56,742 [25] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:20:56,839 [25] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:22:09,541 [25] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 07:31:47,423 [8] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 7605 ms
+2011-06-29 07:49:06,645 [68] ERROR NHibernate.Id.IncrementGenerator [(null)] - could not get increment value
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Account'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.Id.IncrementGenerator.GetNext(ISessionImplementor session)
+2011-06-29 07:49:06,661 [68] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'Account'.
+2011-06-29 13:11:21,809 [13] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id7_0_, this_.CreationLog as Creation2_7_0_, this_.CreationDate as Creation3_7_0_, this_.UpdatedLog as UpdatedLog7_0_, this_.UpdatedDate as UpdatedD5_7_0_, this_.UserId as UserId7_0_, this_.BitCoinAccount as BitCoinA7_7_0_, this_.BitCoin as BitCoin7_0_, this_.CreditAccount as CreditAc9_7_0_, this_.Credit as Credit7_0_ FROM Account this_ WHERE this_.UserId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'BitCoin'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-29 13:11:21,866 [13] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoin'.
+2011-06-29 13:11:21,913 [13] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoin'.
+2011-06-29 13:11:21,914 [13] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'BitCoin'.
+2011-06-29 13:11:23,767 [13] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: UPDATE Mine SET CreationLog = @p0, CreationDate = @p1, UpdatedLog = @p2, UpdatedDate = @p3, Name = @p4, DisplayName = @p5, Icon = @p6, IconName = @p7, Description = @p8, Certificated = @p9, Private = @p10, Offshore = @p11, Address = @p12, HomePage = @p13, Speed = @p14, Tax = @p15, TaxRate = @p16, Bouns = @p17, BounsRate = @p18, TotalSolved = @p19, TotalPay = @p20, TotalTax = @p21, Balance = @p22, DefaultAccount = @p23, DefaultPassword = @p24, CheckTime = @p25, NextCheckTime = @p26, LastException = @p27, IsOnline = @p28, AccountId = @p29 WHERE Id = @p30
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-29 13:13:09,346 [25] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 15517 ms
+2011-06-29 13:13:11,331 [8] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 14446 ms
+2011-06-29 22:55:48,716 [80] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 10013 ms
+2011-06-29 22:55:48,761 [80] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-29 22:55:48,820 [80] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-29 22:55:49,060 [80] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id3_0_, this_.CreationLog as Creation2_3_0_, this_.CreationDate as Creation3_3_0_, this_.UpdatedLog as UpdatedLog3_0_, this_.UpdatedDate as UpdatedD5_3_0_, this_.AccountId as AccountId3_0_, this_.BotId as BotId3_0_, this_.MineId as MineId3_0_, this_.CustomAccount as CustomAc9_3_0_, this_.CustomPassword as CustomP10_3_0_ FROM MineProfile this_ WHERE this_.BotId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'MineProfile'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-29 22:55:49,092 [80] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'MineProfile'.
+2011-06-29 22:55:49,127 [80] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'MineProfile'.
+2011-06-29 22:55:49,128 [80] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'MineProfile'.
+2011-06-29 22:55:49,217 [80] ERROR App.Web.Business.Cache.ComputeManager [(null)] - UpdateServerWithPreferredMineAndCredential
+Castle.ActiveRecord.Framework.ActiveRecordException: Could not perform SlicedFindAll for MineProfile ---> NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT TOP (@p0) this_.Id as Id3_0_, this_.CreationLog as Creation2_3_0_, this_.CreationDate as Creation3_3_0_, this_.UpdatedLog as UpdatedLog3_0_, this_.UpdatedDate as UpdatedD5_3_0_, this_.AccountId as AccountId3_0_, this_.BotId as BotId3_0_, this_.MineId as MineId3_0_, this_.CustomAccount as CustomAc9_3_0_, this_.CustomPassword as CustomP10_3_0_ FROM MineProfile this_ WHERE this_.BotId = @p1 ]
+Positional parameters:  #0>1
+[SQL: SELECT TOP (@p0) this_.Id as Id3_0_, this_.CreationLog as Creation2_3_0_, this_.CreationDate as Creation3_3_0_, this_.UpdatedLog as UpdatedLog3_0_, this_.UpdatedDate as UpdatedD5_3_0_, this_.AccountId as AccountId3_0_, this_.BotId as BotId3_0_, this_.MineId as MineId3_0_, this_.CustomAccount as CustomAc9_3_0_, this_.CustomPassword as CustomP10_3_0_ FROM MineProfile this_ WHERE this_.BotId = @p1] ---> System.Data.SqlClient.SqlException: Invalid object name 'MineProfile'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at Castle.ActiveRecord.ActiveRecordBase.SlicedFindAll(Type targetType, Int32 firstResult, Int32 maxResults, Order[] orders, ICriterion[] criteria)
+   --- End of inner exception stack trace ---
+   at Castle.ActiveRecord.ActiveRecordBase.SlicedFindAll(Type targetType, Int32 firstResult, Int32 maxResults, Order[] orders, ICriterion[] criteria)
+   at Castle.ActiveRecord.ActiveRecordBase.FindFirst(Type targetType, Order[] orders, ICriterion[] criteria)
+   at Castle.ActiveRecord.ActiveRecordBase.FindFirst(Type targetType, ICriterion[] criteria)
+   at Castle.ActiveRecord.ActiveRecordBase`1.FindFirst(ICriterion[] criteria)
+   at App.Web.Business.Data.MineProfile.FindByAccountBot(Int32 botId) in D:\CodePlex\deepbot\app\server\base\business\Data\BitCoin\MineProfile.cs:line 57
+   at App.Web.Business.Cache.ComputeManager.UpdateServerWithPreferredMineAndCredential() in D:\CodePlex\deepbot\app\server\base\business\Cache\ComputeManager.cs:line 297
+2011-06-29 22:56:59,799 [75] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 10936 ms
+2011-06-29 22:56:59,819 [75] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-29 22:56:59,877 [75] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-29 23:01:56,886 [12] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 12383 ms
+2011-06-29 23:02:22,761 [12] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-29 23:02:22,818 [12] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-29 23:02:26,680 [12] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id1_0_, this_.CreationLog as Creation2_1_0_, this_.CreationDate as Creation3_1_0_, this_.UpdatedLog as UpdatedLog1_0_, this_.UpdatedDate as UpdatedD5_1_0_, this_.AccountId as AccountId1_0_, this_.BotId as BotId1_0_, this_.MineId as MineId1_0_, this_.CustomAccount as CustomAc9_1_0_, this_.CustomPassword as CustomP10_1_0_ FROM MineProfile this_ WHERE this_.BotId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'MineProfile'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-29 23:02:26,726 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'MineProfile'.
+2011-06-29 23:02:26,766 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'MineProfile'.
+2011-06-29 23:02:26,767 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'MineProfile'.
+2011-06-29 23:02:26,871 [12] ERROR App.Web.Business.Cache.ComputeManager [(null)] - UpdateServerWithPreferredMineAndCredential
+Castle.ActiveRecord.Framework.ActiveRecordException: Could not perform SlicedFindAll for MineProfile ---> NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT TOP (@p0) this_.Id as Id1_0_, this_.CreationLog as Creation2_1_0_, this_.CreationDate as Creation3_1_0_, this_.UpdatedLog as UpdatedLog1_0_, this_.UpdatedDate as UpdatedD5_1_0_, this_.AccountId as AccountId1_0_, this_.BotId as BotId1_0_, this_.MineId as MineId1_0_, this_.CustomAccount as CustomAc9_1_0_, this_.CustomPassword as CustomP10_1_0_ FROM MineProfile this_ WHERE this_.BotId = @p1 ]
+Positional parameters:  #0>1
+[SQL: SELECT TOP (@p0) this_.Id as Id1_0_, this_.CreationLog as Creation2_1_0_, this_.CreationDate as Creation3_1_0_, this_.UpdatedLog as UpdatedLog1_0_, this_.UpdatedDate as UpdatedD5_1_0_, this_.AccountId as AccountId1_0_, this_.BotId as BotId1_0_, this_.MineId as MineId1_0_, this_.CustomAccount as CustomAc9_1_0_, this_.CustomPassword as CustomP10_1_0_ FROM MineProfile this_ WHERE this_.BotId = @p1] ---> System.Data.SqlClient.SqlException: Invalid object name 'MineProfile'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at Castle.ActiveRecord.ActiveRecordBase.SlicedFindAll(Type targetType, Int32 firstResult, Int32 maxResults, Order[] orders, ICriterion[] criteria)
+   --- End of inner exception stack trace ---
+   at Castle.ActiveRecord.ActiveRecordBase.SlicedFindAll(Type targetType, Int32 firstResult, Int32 maxResults, Order[] orders, ICriterion[] criteria)
+   at Castle.ActiveRecord.ActiveRecordBase.FindFirst(Type targetType, Order[] orders, ICriterion[] criteria)
+   at Castle.ActiveRecord.ActiveRecordBase.FindFirst(Type targetType, ICriterion[] criteria)
+   at Castle.ActiveRecord.ActiveRecordBase`1.FindFirst(ICriterion[] criteria)
+   at App.Web.Business.Data.MineProfile.FindByAccountBot(Int32 botId) in D:\CodePlex\deepbot\app\server\base\business\Data\BitCoin\MineProfile.cs:line 57
+   at App.Web.Business.Cache.ComputeManager.UpdateServerWithPreferredMineAndCredential() in D:\CodePlex\deepbot\app\server\base\business\Cache\ComputeManager.cs:line 297
+2011-06-29 23:02:50,055 [12] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT TOP (@p0) this_.Id as Id1_0_, this_.CreationLog as Creation2_1_0_, this_.CreationDate as Creation3_1_0_, this_.UpdatedLog as UpdatedLog1_0_, this_.UpdatedDate as UpdatedD5_1_0_, this_.AccountId as AccountId1_0_, this_.BotId as BotId1_0_, this_.MineId as MineId1_0_, this_.CustomAccount as CustomAc9_1_0_, this_.CustomPassword as CustomP10_1_0_ FROM MineProfile this_ WHERE this_.BotId = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'MineProfile'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2011-06-29 23:02:50,097 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'MineProfile'.
+2011-06-29 23:02:50,140 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'MineProfile'.
+2011-06-29 23:02:50,140 [12] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'MineProfile'.
+2011-06-29 23:03:10,752 [12] ERROR App.Web.Business.Cache.ComputeManager [(null)] - UpdateServerWithPreferredMineAndCredential
+Castle.ActiveRecord.Framework.ActiveRecordException: Could not perform SlicedFindAll for MineProfile ---> NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT TOP (@p0) this_.Id as Id1_0_, this_.CreationLog as Creation2_1_0_, this_.CreationDate as Creation3_1_0_, this_.UpdatedLog as UpdatedLog1_0_, this_.UpdatedDate as UpdatedD5_1_0_, this_.AccountId as AccountId1_0_, this_.BotId as BotId1_0_, this_.MineId as MineId1_0_, this_.CustomAccount as CustomAc9_1_0_, this_.CustomPassword as CustomP10_1_0_ FROM MineProfile this_ WHERE this_.BotId = @p1 ]
+Positional parameters:  #0>1
+[SQL: SELECT TOP (@p0) this_.Id as Id1_0_, this_.CreationLog as Creation2_1_0_, this_.CreationDate as Creation3_1_0_, this_.UpdatedLog as UpdatedLog1_0_, this_.UpdatedDate as UpdatedD5_1_0_, this_.AccountId as AccountId1_0_, this_.BotId as BotId1_0_, this_.MineId as MineId1_0_, this_.CustomAccount as CustomAc9_1_0_, this_.CustomPassword as CustomP10_1_0_ FROM MineProfile this_ WHERE this_.BotId = @p1] ---> System.Data.SqlClient.SqlException: Invalid object name 'MineProfile'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at Castle.ActiveRecord.ActiveRecordBase.SlicedFindAll(Type targetType, Int32 firstResult, Int32 maxResults, Order[] orders, ICriterion[] criteria)
+   --- End of inner exception stack trace ---
+   at Castle.ActiveRecord.ActiveRecordBase.SlicedFindAll(Type targetType, Int32 firstResult, Int32 maxResults, Order[] orders, ICriterion[] criteria)
+   at Castle.ActiveRecord.ActiveRecordBase.FindFirst(Type targetType, Order[] orders, ICriterion[] criteria)
+   at Castle.ActiveRecord.ActiveRecordBase.FindFirst(Type targetType, ICriterion[] criteria)
+   at Castle.ActiveRecord.ActiveRecordBase`1.FindFirst(ICriterion[] criteria)
+   at App.Web.Business.Data.MineProfile.FindByAccountBot(Int32 botId) in D:\CodePlex\deepbot\app\server\base\business\Data\BitCoin\MineProfile.cs:line 57
+   at App.Web.Business.Cache.ComputeManager.UpdateServerWithPreferredMineAndCredential() in D:\CodePlex\deepbot\app\server\base\business\Cache\ComputeManager.cs:line 297
+2011-06-29 23:04:20,516 [14] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9754 ms
+2011-06-29 23:05:12,248 [14] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9350 ms
+2011-06-29 23:07:46,626 [14] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 113573 ms
+2011-06-29 23:07:58,527 [14] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-29 23:07:58,583 [14] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-29 23:46:10,704 [85] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6407 ms
+2011-06-29 23:46:10,717 [85] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-29 23:46:10,729 [85] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 00:01:15,300 [82] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6124 ms
+2011-06-30 00:01:15,313 [82] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 00:01:15,325 [82] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 00:21:37,032 [51] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 10857 ms
+2011-06-30 00:21:37,047 [51] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 00:21:37,108 [51] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 00:23:31,186 [73] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6627 ms
+2011-06-30 00:23:31,201 [73] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 00:23:31,213 [73] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 00:28:11,518 [80] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6342 ms
+2011-06-30 00:28:11,531 [80] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 00:28:11,782 [80] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 00:28:49,264 [82] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6875 ms
+2011-06-30 00:28:49,276 [82] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 00:28:49,288 [82] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 00:29:44,417 [82] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6454 ms
+2011-06-30 00:29:44,431 [82] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 00:29:44,448 [82] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 06:26:05,781 [47] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8809 ms
+2011-06-30 06:26:05,795 [47] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 06:26:05,846 [47] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 06:27:59,921 [80] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 10198 ms
+2011-06-30 06:27:59,934 [80] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 06:27:59,989 [80] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 06:41:18,132 [35] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6471 ms
+2011-06-30 06:41:18,145 [35] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 06:41:18,157 [35] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 06:43:27,553 [37] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6010 ms
+2011-06-30 06:43:27,566 [37] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 06:43:27,578 [37] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 06:44:46,499 [34] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 5628 ms
+2011-06-30 06:44:46,513 [34] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 06:44:46,646 [34] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 06:55:14,033 [30] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6280 ms
+2011-06-30 06:55:14,046 [30] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 06:55:14,053 [30] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:01:27,533 [70] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6684 ms
+2011-06-30 07:01:27,548 [70] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:01:27,728 [70] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:01:35,420 [35] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: INSERT INTO MineProfile (CreationLog, CreationDate, UpdatedLog, UpdatedDate, AccountId, BotId, MineId, CustomAccount, CustomPassword, Id) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-30 07:02:07,958 [40] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: INSERT INTO MineProfile (CreationLog, CreationDate, UpdatedLog, UpdatedDate, AccountId, BotId, MineId, CustomAccount, CustomPassword, Id) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-30 07:05:21,908 [30] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6142 ms
+2011-06-30 07:05:21,922 [30] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:05:21,929 [30] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:05:29,078 [35] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute command: INSERT INTO MineProfile (CreationLog, CreationDate, UpdatedLog, UpdatedDate, AccountId, BotId, MineId, CustomAccount, CustomPassword, Id) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at System.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at System.Data.SqlClient.TdsParser.WriteValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2011-06-30 07:06:10,587 [40] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 5858 ms
+2011-06-30 07:06:10,601 [40] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:06:10,612 [40] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:12:52,433 [32] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8523 ms
+2011-06-30 07:12:52,448 [32] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:12:52,498 [32] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:17:39,290 [62] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8901 ms
+2011-06-30 07:17:39,305 [62] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:17:39,360 [62] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:19:04,156 [11] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8969 ms
+2011-06-30 07:19:04,172 [11] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:19:04,229 [11] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:25:12,416 [26] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6752 ms
+2011-06-30 07:25:12,430 [26] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:25:12,442 [26] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:27:49,265 [26] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6752 ms
+2011-06-30 07:27:49,278 [26] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:27:49,293 [26] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:28:33,844 [35] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6441 ms
+2011-06-30 07:28:33,858 [35] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:28:33,870 [35] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:32:13,923 [34] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8552 ms
+2011-06-30 07:32:13,937 [34] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:32:14,031 [34] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:34:56,875 [35] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8795 ms
+2011-06-30 07:34:56,890 [35] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:34:56,942 [35] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:36:39,342 [30] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8882 ms
+2011-06-30 07:36:39,357 [30] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:36:39,412 [30] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:38:12,521 [34] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8630 ms
+2011-06-30 07:38:12,538 [34] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:38:12,597 [34] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:44:06,535 [36] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9398 ms
+2011-06-30 07:44:06,550 [36] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:44:06,599 [36] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:49:15,463 [19] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9397 ms
+2011-06-30 07:49:15,477 [19] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:49:15,530 [19] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:52:13,220 [12] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8549 ms
+2011-06-30 07:52:13,238 [12] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:52:13,294 [12] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:56:41,510 [12] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8585 ms
+2011-06-30 07:56:41,524 [12] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:56:41,586 [12] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:58:55,996 [11] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9066 ms
+2011-06-30 07:58:56,012 [11] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:58:56,071 [11] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 07:59:46,982 [27] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8945 ms
+2011-06-30 07:59:46,997 [27] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 07:59:47,051 [27] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 08:01:27,468 [31] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9194 ms
+2011-06-30 08:01:27,485 [31] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 08:01:27,543 [31] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-06-30 08:06:42,754 [21] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9631 ms
+2011-06-30 08:06:42,769 [21] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-06-30 08:06:42,826 [21] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-03 21:38:38,258 [360] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 27088 ms
+2011-07-03 21:38:38,322 [360] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-03 21:38:38,698 [360] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-03 23:40:16,716 [325] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 19289 ms
+2011-07-03 23:40:16,760 [325] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-03 23:40:16,809 [325] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-03 23:44:59,102 [323] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 20841 ms
+2011-07-03 23:44:59,149 [323] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-03 23:44:59,347 [323] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-03 23:55:01,887 [349] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 25280 ms
+2011-07-03 23:55:01,930 [349] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-03 23:55:02,067 [349] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-03 23:58:32,796 [334] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 24704 ms
+2011-07-03 23:58:32,846 [334] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-03 23:58:33,173 [334] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-04 19:00:07,551 [13] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 10201 ms
+2011-07-04 19:00:07,582 [13] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-04 19:00:07,643 [13] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 08:59:17,678 [26] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 10544 ms
+2011-07-09 08:59:17,706 [26] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 08:59:17,763 [26] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 10:00:31,758 [69] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9369 ms
+2011-07-09 10:16:05,229 [7] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9722 ms
+2011-07-09 10:16:05,249 [7] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 10:16:05,497 [7] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 10:41:55,425 [10] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9754 ms
+2011-07-09 10:41:55,441 [10] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 10:41:55,495 [10] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 11:18:23,841 [40] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9110 ms
+2011-07-09 11:18:23,860 [40] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 11:18:24,057 [40] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 11:45:49,949 [11] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 6086 ms
+2011-07-09 11:45:49,964 [11] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 11:45:50,486 [11] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 11:53:04,398 [43] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9139 ms
+2011-07-09 11:53:04,413 [43] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 11:53:04,472 [43] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 11:57:32,429 [47] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8834 ms
+2011-07-09 11:57:32,443 [47] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 11:57:32,499 [47] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 12:35:24,946 [7] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8928 ms
+2011-07-09 12:35:24,961 [47] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 12:35:25,022 [47] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 12:36:54,181 [46] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8890 ms
+2011-07-09 12:36:54,196 [46] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 12:36:54,260 [46] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 12:40:11,964 [13] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9558 ms
+2011-07-09 12:40:11,978 [13] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 12:40:12,034 [13] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 13:01:03,304 [35] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9221 ms
+2011-07-09 13:01:03,318 [35] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 13:01:03,374 [35] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 14:41:26,934 [130] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9885 ms
+2011-07-09 20:44:39,887 [197] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8962 ms
+2011-07-09 20:44:39,902 [197] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 20:44:39,965 [197] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 20:48:24,222 [208] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9903 ms
+2011-07-09 20:48:24,238 [208] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 20:48:24,295 [208] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 20:53:29,343 [170] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9226 ms
+2011-07-09 20:53:29,363 [170] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 20:53:29,426 [170] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 20:57:37,518 [205] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9861 ms
+2011-07-09 20:57:37,535 [205] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 20:57:37,591 [205] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 20:58:22,585 [197] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9080 ms
+2011-07-09 20:58:22,601 [197] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 20:58:22,650 [197] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 21:15:43,245 [170] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8565 ms
+2011-07-09 21:15:43,259 [170] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 21:15:43,321 [170] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 21:17:23,710 [125] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8963 ms
+2011-07-09 21:17:23,727 [125] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 21:17:23,786 [125] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 21:24:56,114 [195] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8408 ms
+2011-07-09 21:24:56,128 [195] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 21:24:56,184 [195] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 21:51:56,680 [202] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9025 ms
+2011-07-09 21:51:56,696 [202] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 21:51:57,002 [202] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 22:13:13,709 [126] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9085 ms
+2011-07-09 22:13:13,725 [126] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 22:13:13,780 [126] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 22:26:43,854 [115] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8921 ms
+2011-07-09 22:26:43,870 [115] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 22:26:43,946 [115] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 22:29:16,328 [125] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8653 ms
+2011-07-09 22:29:16,344 [125] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 22:29:16,399 [125] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 22:35:02,009 [125] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8646 ms
+2011-07-09 22:35:02,025 [125] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 22:35:02,073 [125] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 22:39:34,696 [170] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8977 ms
+2011-07-09 22:39:34,712 [170] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 22:39:34,767 [170] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 22:48:07,328 [170] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9147 ms
+2011-07-09 22:48:07,346 [170] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 22:48:07,398 [170] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 23:03:50,109 [196] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8671 ms
+2011-07-09 23:03:50,126 [196] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 23:03:50,179 [196] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 23:11:23,703 [192] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9190 ms
+2011-07-09 23:11:23,719 [192] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 23:11:23,773 [192] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-07-09 23:18:34,992 [121] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8760 ms
+2011-07-09 23:18:35,006 [121] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-07-09 23:18:35,057 [121] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-10-03 11:59:33,832 [13] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8524 ms
+2011-10-03 11:59:33,882 [13] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-10-03 11:59:34,309 [13] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-10-03 18:14:56,503 [261] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8404 ms
+2011-10-03 18:14:56,518 [261] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-10-03 18:14:56,580 [261] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-10-04 07:58:56,957 [23] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9747 ms
+2011-10-04 07:58:56,991 [23] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-10-04 07:58:57,048 [23] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-10-04 08:35:55,460 [53] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2011-10-04 08:35:55,507 [53] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2011-10-05 07:56:21,865 [12] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 9023 ms
+2011-10-05 07:56:21,892 [12] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-10-05 07:56:21,949 [12] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-10-05 08:35:25,266 [98] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8351 ms
+2011-10-05 08:35:25,280 [98] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-10-05 08:35:25,343 [98] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-10-05 08:41:11,699 [92] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8583 ms
+2011-10-05 08:41:11,713 [92] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-10-05 08:41:11,773 [92] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.
+2011-10-07 17:58:51,754 [15] INFO App.Web.Business.Cache.Server [(null)] - [Perf] Update Server cost 8054 ms
+2011-10-07 17:58:51,786 [15] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager
+2011-10-07 17:58:51,801 [15] INFO App.Web.Business.Cache.ComputeManager [(null)] - Initialize ComputeManager Complete.

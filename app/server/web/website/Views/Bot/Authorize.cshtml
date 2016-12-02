@@ -1,0 +1,89 @@
+﻿@model App.Web.Business.Data.Bot
+
+@{
+    ViewBag.Title = "Authorize";
+    Layout = "~/Views/Shared/_Layout1140.cshtml";
+}
+
+<h2>认领挖掘机</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+
+        <div class="display-label">
+            挖掘机的用户名
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Login)
+        </div>
+
+        <div class="display-label">
+            网络地址
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.IPAddress)
+        </div>
+
+        <div class="display-label">
+            挖掘机客户端信息
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.CreationLog)
+        </div>
+
+        <div class="display-label">
+            首次使用挖掘机时间
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.CreationDate)
+        </div>
+        
+
+        <div class="editor-label">
+            起个好记的名字
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+@{
+    if (WebMail.SmtpServer.IsEmpty())
+    {
+        <text>
+        <div class="editor-label">
+            挖掘机的密码
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+        </text>
+    }
+    else
+    {
+        <text>
+        <div class="editor-label">
+            邮件确认码
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ConfirmCode)
+            @Html.ValidationMessageFor(model => model.ConfirmCode)
+        </div>
+        </text>
+    }  
+}
+        <p>
+            <input type="submit" value="开始认领" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("返回", "Index", "Work")
+</div>

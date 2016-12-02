@@ -1,0 +1,133 @@
+﻿.form
+{
+    border: 1px solid #D2DCCD;
+    background-color: white;
+    color: #444444;
+    padding: 25px;
+}
+.display-form
+{
+    border: 1px none #D2DCCD;
+    background-color: transparent;
+    color: #444444;
+    padding: 25px;
+}
+
+.form.register-form,
+.form.login-form
+{
+    max-width: 240px;
+}
+.form fieldset
+{
+    margin: 0;
+    padding: 0;
+}
+
+.form legend
+{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.form table
+{
+    width: 100%;
+    max-width: 290px;
+    border-spacing: 0px;
+}
+
+.form input[type='password'],
+.form input[type='text']
+{
+    width: 100%;
+    border: 1px solid #B7D4D6;    
+    height: 35px;    
+}
+
+.form input[type='password']:focus,
+.form input[type='text']:focus
+{
+    outline-color: #E59700;
+    outline-style: auto;
+    outline-width: 5px;
+}
+.form input[type='checkbox']
+{
+    background-color: #FFFFFF;
+}
+
+.form .editor-label label, .form .editor-label a
+{
+    line-height: 1.5em;
+}
+
+.form .editor-label a
+{
+    font-size: 0.95em;
+}
+
+.form input[type="submit"], 
+.form input[type="button"], 
+.form input[type="reset"],
+.form a.button 
+{
+    cursor: pointer;
+    font-size: 0;
+    zoom: 1;
+    line-height: 100px;
+    vertical-align: middle;
+    margin-right: 6px;
+    border: 0;
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 82px;
+    height: 31px;
+    background: url('form/btn-reg.png') no-repeat;
+}
+
+.form input[type="button"].delete,
+.form a.button.delete 
+{
+    background-position: 0 -157px;
+}
+
+.form input[type="button"].delete:hover,
+.form a.button.delete:hover
+{
+    background-position: -95px -157px;
+}
+
+.form input[type="submit"]
+{
+    background-position: 0 -120px;
+}
+
+.form input[type="submit"]:hover
+{
+    background-position: -95px -120px;
+}
+
+.form.login-form input[type="submit"].disabled,
+.form.login-form input[type="submit"].disabled:hover {
+    background-position: -253px 0;
+}
+
+.form.login-form input[type="submit"]:hover {
+    background-position: -128px 0;
+}
+
+.form.login-form input[type="submit"] {
+    width: 86px;
+    height: 27px;
+    background: url('form/btn-login.png') no-repeat;
+    background-position: 0 0;
+}
+
+.form.register-form input[type="submit"] 
+{
+    width: 177px;
+    height: 31px;
+    background-position: 0 0;
+}

@@ -1,0 +1,8 @@
+relre:/\.svn$
+relre:^\.svn$
+glob:bin/*
+glob:obj/*
+glob:*.user
+glob:*.suo
+glob:*.bak
+glob:~~ working folder ~~/*
